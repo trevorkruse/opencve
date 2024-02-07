@@ -47,5 +47,5 @@ class BaseResource(Resource):
             limit_value=lambda: app.config["RATELIMIT_VALUE"],
             key_func=lambda: request.authorization.username,
         ),
-        auth_required,
+        #auth_required,
     ]
